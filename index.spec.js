@@ -24,7 +24,7 @@ describe('Implement the divide rule', () => {
 
 
     it('should return FooBar if value can be divide by 3 and 5', () => {
-        const inputs = ['15', '51']
+        const inputs = ['15', '30']
         const output = 'FooBar'
         inputs.forEach(input => expect(compute(input)).toEqual(output))        
     })
