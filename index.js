@@ -2,19 +2,18 @@
 // all rules step by step
 const compute = n => {
     const safeN = parseInt(n, 10)
-    if(safeN % 3 === 0 && safeN % 5 === 0) {
-        return 'FooBar'
-    }
+    let result = ''
 
     if(safeN % 3 === 0) {
-        return 'Foo'
+        result += 'Foo'
     }
 
     if(safeN % 5 === 0) {
-        return 'Bar'
+        result += 'Bar'
     }
-    
-    return n
+    // ternary expression. the double !! convert variable to boolean value
+    // the triple === checks for value and type. it is a safer approach
+    return !!result === true ? result : n
 }
 
 module.exports = compute
