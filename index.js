@@ -11,6 +11,10 @@ const compute = n => {
     if(safeN % 5 === 0) {
         result += 'Bar'
     }
+
+    if(safeN % 7 === 0) {
+        result += 'Qix'
+    }
     // ternary expression. the double !! convert variable to boolean value
     // the triple === checks for value and type. it is a safer approach
     return !!result === true ? result : n
