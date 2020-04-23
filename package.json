@@ -5,7 +5,6 @@
   "repository": "https://github.com/WeSquad/kata-foobarqix-nodejs.git",
   "author": "Jimmy Grande",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "start" : "node",
     "test" : "jest --coverage",
