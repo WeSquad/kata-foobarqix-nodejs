@@ -85,4 +85,10 @@ describe('Implement the `contains` rule with the divide rule', () => {
         const output = 'BarQixFooBar'
         expect(compute(input)).toEqual(output)        
     })
+
+    it('should return BarQixFooBar if value contains 7 AND has no divide rule', () => {
+        const input = '71'
+        const output = 'Qix'
+        expect(compute(input)).toEqual(output)
+    })
 })
