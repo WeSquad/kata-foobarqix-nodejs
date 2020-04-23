@@ -61,4 +61,10 @@ describe('Implement the `contains` rule with the divide rule', () => {
         const output = 'Foo'
         expect(compute(input)).toEqual(output)        
     })
+
+    it('should return FooFoo if value contains 3 and is divisible by 3', () => {
+        const input = '3'
+        const output = 'FooFoo'
+        expect(compute(input)).toEqual(output)        
+    })
 })
