@@ -54,3 +54,11 @@ describe('Implement the divide rule', () => {
     })
     
 })
+
+describe('Implement the `contains` rule with the divide rule', () => {
+    it('should return Foo if value contains 3 and has no divide rule', () => {
+        const input = '13'
+        const output = 'Foo'
+        expect(compute(input)).toEqual(output)        
+    })
+})
