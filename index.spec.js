@@ -30,7 +30,7 @@ describe('Implement the divide rule', () => {
     })
 
     it('should return Qix if value can be divide by 7', () => {
-        const inputs = ['7', '49']
+        const inputs = ['49']
         const output = 'Qix'
         inputs.forEach(input => expect(compute(input)).toEqual(output))        
     })
@@ -42,7 +42,7 @@ describe('Implement the divide rule', () => {
     })
     
     it('should return BarQix if value can be divide by 5 and 7', () => {
-        const inputs = ['70']
+        const inputs = ['490']
         const output = 'BarQix'
         inputs.forEach(input => expect(compute(input)).toEqual(output))        
     })
