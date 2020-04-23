@@ -1,0 +1,17 @@
+{
+  "name": "kata-foobarqix-nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/WeSquad/kata-foobarqix-nodejs.git",
+  "author": "Jimmy Grande",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start" : "node",
+    "test" : "jest --coverage",
+    "test:dev": "yarn test --watchAll"
+  },
+  "devDependencies": {
+    "jest": "^25.4.0"
+  }
+}
