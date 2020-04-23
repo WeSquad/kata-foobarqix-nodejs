@@ -11,7 +11,7 @@ describe('Basic test', () => {
 
 describe('Implement the divide rule', () => {
     it('should return Foo if value can be divide by 3', () => {
-        const inputs = ['3', '6', '9', '12']
+        const inputs = ['6', '9', '12']
         const output = 'Foo'
         inputs.forEach(input => expect(compute(input)).toEqual(output))        
     })
@@ -24,7 +24,7 @@ describe('Implement the divide rule', () => {
 
 
     it('should return FooBar if value can be divide by 3 and 5', () => {
-        const inputs = ['15', '30']
+        const inputs = ['15']
         const output = 'FooBar'
         inputs.forEach(input => expect(compute(input)).toEqual(output))        
     })
@@ -42,7 +42,7 @@ describe('Implement the divide rule', () => {
     })
     
     it('should return BarQix if value can be divide by 5 and 7', () => {
-        const inputs = ['35', '70']
+        const inputs = ['70']
         const output = 'BarQix'
         inputs.forEach(input => expect(compute(input)).toEqual(output))        
     })

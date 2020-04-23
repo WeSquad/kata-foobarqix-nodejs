@@ -15,6 +15,12 @@ const compute = n => {
     if(safeN % 7 === 0) {
         result += 'Qix'
     }
+    
+    Array.from(n).forEach(v => {
+        if(v === '3') {
+            result += 'Foo'
+        }
+    })
     // ternary expression. the double !! convert variable to boolean value
     // the triple === checks for value and type. it is a safer approach
     return !!result === true ? result : n
