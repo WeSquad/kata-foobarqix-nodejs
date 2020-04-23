@@ -110,3 +110,17 @@ describe('Implement the `contains` rule with the divide rule', () => {
         expect(compute(input)).toEqual(output)
     })
 })
+
+describe('Replace 0 with *', () => {
+    it('should replace 0 with a * and applies other rules', () => {
+        const mock = {
+            '101': '1*1',
+            '303': 'FooFoo*Foo', 
+            '105': 'FooBarQix*Bar', 
+            '10101': 'FooQix**'
+        }
+        Object.entries(mock).forEach(([input, output]) => {
+            expect(compute(input)).toEqual(output)
+        })
+    })
+})
