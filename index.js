@@ -20,6 +20,9 @@ const compute = n => {
         if(v === '3') {
             result += 'Foo'
         }
+        if(v === '5') {
+            result += 'Bar'
+        }
     })
     // ternary expression. the double !! convert variable to boolean value
     // the triple === checks for value and type. it is a safer approach
