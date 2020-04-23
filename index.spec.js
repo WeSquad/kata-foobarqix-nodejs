@@ -17,7 +17,7 @@ describe('Implement the divide rule', () => {
     })
 
     it('should return Bar if value can be divide by 5', () => {
-        const inputs = ['5', '10']
+        const inputs = ['10']
         const output = 'Bar'
         inputs.forEach(input => expect(compute(input)).toEqual(output))        
     })
@@ -65,6 +65,12 @@ describe('Implement the `contains` rule with the divide rule', () => {
     it('should return FooFoo if value contains 3 and is divisible by 3', () => {
         const input = '3'
         const output = 'FooFoo'
+        expect(compute(input)).toEqual(output)        
+    })
+
+    it('should return BarBar if value contains 5 and has no divide rule', () => {
+        const input = '5'
+        const output = 'BarBar'
         expect(compute(input)).toEqual(output)        
     })
 })
