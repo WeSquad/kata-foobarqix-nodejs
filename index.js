@@ -13,16 +13,19 @@ const compute = n => {
         } 
     })
     
-    Array.from(n).forEach(v => {
+    Array.from(n).forEach(v => {             
         Object.keys(map).forEach(key => {
             if(v === key) {
                 result += map[key]
             } 
-        })       
+        })
+        if(v === '0' && !!result) {
+            result += '*'            
+        }
     })
     // ternary expression. the double !! convert variable to boolean value
     // the triple === checks for value and type. it is a safer approach
-    return !!result === true ? result : n
+    return !!result === true ? result : n.replace('0','*')
 }
 
 module.exports = compute
