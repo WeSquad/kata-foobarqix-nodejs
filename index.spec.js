@@ -16,19 +16,6 @@ describe('Implement the divide rule', () => {
         inputs.forEach(input => expect(compute(input)).toEqual(output))        
     })
 
-    // it('should return Bar if value can be divide by 5', () => {
-    //     const inputs = ['20']
-    //     const output = 'Bar'
-    //     inputs.forEach(input => expect(compute(input)).toEqual(output))        
-    // })
-
-
-    // it('should return FooBar if value can be divide by 3 and 5', () => {
-    //     const inputs = ['60']
-    //     const output = 'FooBar'
-    //     inputs.forEach(input => expect(compute(input)).toEqual(output))        
-    // })
-
     it('should return Qix if value can be divide by 7', () => {
         const inputs = ['49']
         const output = 'Qix'
@@ -39,20 +26,7 @@ describe('Implement the divide rule', () => {
         const input = '21'
         const output = 'FooQix'
         expect(compute(input)).toEqual(output) 
-    })
-    
-    // it('should return BarQix if value can be divide by 5 and 7', () => {
-    //     const inputs = ['490']
-    //     const output = 'BarQix'
-    //     inputs.forEach(input => expect(compute(input)).toEqual(output))        
-    // })
-
-    // it('should return FooBarQix if value can be divide by 3 and 5 and 7', () => {
-    //     const inputs = ['210']
-    //     const output = 'FooBarQix'
-    //     inputs.forEach(input => expect(compute(input)).toEqual(output))        
-    // })
-    
+    })  
 })
 
 describe('Implement the `contains` rule with the divide rule', () => {
@@ -97,18 +71,6 @@ describe('Implement the `contains` rule with the divide rule', () => {
         const output = 'FooQix'
         expect(compute(input)).toEqual(output)
     })
-
-    // it('should return BarQix when value contains 7 AND is divible by 5', () => {
-    //     const input = '170'
-    //     const output = 'BarQix'
-    //     expect(compute(input)).toEqual(output)
-    // })
-
-    // it('should return FooBarQix when value contains 7 AND is divible by 3 and 5', () => {
-    //     const input = '270'
-    //     const output = 'FooBarQix'
-    //     expect(compute(input)).toEqual(output)
-    // })
 })
 
 describe('Replace 0 with *', () => {
