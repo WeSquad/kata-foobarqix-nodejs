@@ -1,5 +1,8 @@
-# [STATEMENT](http://codingdojo.org/kata/FooBarQix)
+[![Build Status](https://travis-ci.org/WeSquad/kata-foobarqix-nodejs.svg?branch=jgrande-implementation)](https://travis-ci.org/WeSquad/kata-foobarqix-nodejs)  
 
+---
+
+# [STATEMENT](http://codingdojo.org/kata/FooBarQix)
 You should implement a function String compute(String) which implements the following rules.
 
 ## Step 1
